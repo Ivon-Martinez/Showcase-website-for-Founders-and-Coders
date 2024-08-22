@@ -14,14 +14,36 @@
 </head>
 <body>
     <div id="slides">
+
         
-        <div class="navigationMenu">
-          <button class="button about">About</button>
-          <button class="button projects">Projects</button>
-          <button class="button contact">Contact</button>
-          <button class="button cv">CV</button>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
 
+        <div class="reducedMenu">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div> 
+          <div class="home">
+            <button class="button img">IMG</button>
+          </div>
+
+
+          <div class="navigationMenu">
+            <button class="button about">About</button>
+            <button class="button projects">Projects</button>
+            <button class="button services">Services</button>
+            <button class="button contact">Contact</button>
+            <button class="button cv">CV</button>
+          </div>
+      </div>
         <div class="overlay"></div>
         
         <div class="slides-container">
@@ -32,8 +54,8 @@
         </div>
         
         <div class="title" id="title">
-          <p class="hello">Hello,</p> 
-          <p class="name">I'm Ivon.</p> 
+            <p class="hello">Hello, I'm Ivon.</p> 
+            <!-- <p class="name">I'm Ivon.</p>  -->
  
           <p class="welcome">Welcome to my portfolio!</p>
         </div>

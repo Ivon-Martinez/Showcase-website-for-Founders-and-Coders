@@ -33,14 +33,25 @@
 
 }
 
+.reducedMenu {
+    z-index: 5;
+    position: absolute;
+    margin-top: 30px;
+    z-index: 5;
+    top: 1%;
+    left: 4%;
+    visibility: hidden;
+    color: #e60073;
+}
+
 .title {
     position: absolute;
     width: 100%;
-    height: 250px;
+    /* height:250px; */
     top: 50%;
     z-index: 5;
     text-align:center;
-    margin-top: -125px;
+    margin-top: -175px;
 }
 
 .title p {
@@ -49,52 +60,50 @@
 
 }
 
+/* .sentence {
+    display: inline-flex
+} */
+
 .title .hello {
-    font-size: 100px;
-    font-weight: 1000;
+    font-size: 80px;
+    font-weight: 800;
     letter-spacing: 5px;
     /* font-size: 5vw; */
+    color: #00000052;    -webkit-text-stroke: 2px white;
+    margin-right: 10%;
+}
+
+
+/* .title .name {
+    font-size: 80px;
+    font-weight: 1000;
+    letter-spacing: 5px;
+
     color: transparent;
     -webkit-text-stroke: 2px white;
-    
-}
-
-.title .name {
-    /* font-size: 80px;
-    font-weight: 1000;
-    letter-spacing: 5px;
-    /* font-size: 5vw; */
-    /* color: transparent;
-    -webkit-text-stroke: 2px white;
-    text-shadow: 00000052; */ 
+    text-shadow: 00000052;
+} */
+   /* font-size: 5vw; */
+    /* color: #fff; */
+    /* text-align: center; */
+    /* animation: glow 1s ease-in-out infinite alternate; */
 
 
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-}
 
 
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
 
 
 .title .welcome {
-    margin-top: -70px;
-     font-size: 28px;
+    margin-top: -80px;
+     font-size: 30px;
     /* font-size: 1.5vw; */
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 7px;
-    text-shadow: 0px 2px 5px rgb(0, 0, 0);
+    /* text-shadow: 0px 2px 5px rgb(0, 0, 0); */
+    color: #fff;
+    /* text-align: center; */
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-left: 15%;
 }
 
 .copyrightSection {
@@ -108,38 +117,209 @@
     margin-top: -50px;
 }
 
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+
 .navigationMenu {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 50px;
     z-index: 5;
 
-    top: 5%;
-    left: 50%;
+    /* top: 1%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; */
+
+    top: 1%;
+    right: 5%; /* changed from left: 80% to right: 10% */
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; Allow buttons to wrap on smaller screens */
+    gap: 10px; /* Space between buttons */
+
+
+    align-items: center;
+    flex-wrap: nowrap;        /* Prevent buttons from wrapping to a new line */
+    overflow: hidden;         /* Hide overflowing content */
+    white-space: nowrap;      /* Prevent text wrapping inside buttons */
+
+}
+
+.home {
+    position: absolute;
+    margin-top: 50px;
+    z-index: 5;
+
+    top: 1%;
+    left: 6%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
 
 }
-  
-  .button:hover {
+
+  .navigationMenu button:hover {
     background: black;
     border: 2px solid black;
+    color: #ff4da6;
 
   }
 
-  .button {
+  .home button:hover {
+    background: #00000052;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+  }
+
+  .navigationMenu button {
     border: 2px solid;
     background-color: #00000052;
     padding: 14px 28px;
+    flex-shrink: 1;           /* Allow buttons to shrink */
+
     font-size: 22px;
     cursor: pointer;
     border-color: #e7e7e7;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 8%;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    /* margin: 0 10px;   aumenta el espacio entre los botones*/
+
+  }
+
+  .home button {
+    /* position: absolute;
+    margin-top: 50px;
+    z-index: 5;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    left: 5%;*/
+    color: #ff4da6;
+    background-color: black;
+    border: 0px solid;
+
+    padding: 14px 14px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8%;
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     margin: 0 10px;
-    
-  }
 
+
+
+}
+
+@media (max-width: 768px) {
+    .navigationMenu {
+        gap: 5px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .navigationMenu button {
+        padding: 10px 15px;    /* Reduce padding */
+        font-size: 18px;       /* Reduce font size */
+    }
+
+    .home {
+        gap: 5px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .home button {
+        padding: 10px 15px;    /* Reduce padding */
+        font-size: 18px;       /* Reduce font size */
+    }
+}
+
+@media (max-width: 565px) {
+    .navigationMenu {
+        /*gap: 2px;               Further reduce space between buttons */
+        visibility: hidden;
+    }
+
+    .home {
+       /* gap: 2px;               Further reduce space between buttons */
+       visibility: hidden;
+    }
+
+    /* .navigationMenu button {
+        padding: 8px 10px;     
+        font-size: 16px;       
+    }
+
+    .home button {
+        padding: 8px 10px;     
+        font-size: 16px;       
+    } */
+
+    .reducedMenu {
+        visibility: visible;
+    }
+}
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+
+  } */
 
