@@ -28,6 +28,10 @@
     background-image: url(../img/icon/next_white.png);
 }
 
+/* body {
+min-width: 565px;
+} */
+
 .slides-container {
     filter: grayscale(100%);
 
@@ -53,8 +57,7 @@
     text-align:center;
     margin-top: -175px;
 
-    margin-right: 60px;
-    padding-right: 60px;
+
 }
 
 .title p {
@@ -243,7 +246,68 @@
         padding: 12px 20px;    /* Reduce padding */
         font-size: 20px;       /* Reduce font size */
     }
+
+    .title {
+        /* top: 50%; */
+        margin-top: -155px;
+    }
+
+    .title .hello {
+        font-size: 70px;
+        margin-left: 80px;
+
+        font-weight: 800;
+        letter-spacing: 4px;
+    }
+
+    .title .welcome{
+    letter-spacing: 6px;
+    margin-left: 10%;
+    }
+
 }
+
+
+@media (max-width: 815px){
+    .navigationMenu {
+        gap: 8px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .navigationMenu button {
+        padding: 12px 20px;    /* Reduce padding */
+        font-size: 20px;       /* Reduce font size */
+    }
+
+    .home {
+        gap: 8px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .home button {
+        padding: 12px 20px;    /* Reduce padding */
+        font-size: 20px;       /* Reduce font size */
+    }
+
+    .title {
+        margin-top: -135px;
+    }
+
+    .title .hello {
+        font-size: 60px;
+        margin-left: 80px;
+
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+
+    .title .welcome{
+    letter-spacing: 6px;
+    margin-left: 10%;
+    margin-top: -70px;
+
+    }
+
+}
+
 @media (max-width: 768px) {
     .navigationMenu {
         gap: 5px;              /* Reduce space between buttons on smaller screens */
@@ -262,12 +326,56 @@
         padding: 10px 15px;    /* Reduce padding */
         font-size: 18px;       /* Reduce font size */
     }
+
+    .title {
+        margin-top: -113px;
+    }
+
+    .title .hello {
+        font-size: 50px;
+        margin-left: 80px;
+
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .title .welcome{
+        letter-spacing: 5px;
+        margin-left: 5%;
+        margin-top: -58px;
+
+    }
+
 }
 
-@media (max-width: 565px) {
+@media (max-width: 576px) {
     .navigationMenu {
         /*gap: 2px;               Further reduce space between buttons */
         visibility: hidden;
+    }
+
+    .title {
+        margin-top: -100px;
+    }
+
+    .title .hello {
+        font-size: 39px;
+        margin-left: 80px;
+
+        font-weight: 800;
+        letter-spacing: 1px;
+
+    }
+
+    .title .welcome{
+        letter-spacing: 5px;
+        margin-left: 5%;
+        margin-top: -35px;
+        margin-left: 80px;
+        margin-right: 60px;
+
+
+
     }
 
     .home {
@@ -287,6 +395,10 @@
 
     .reducedMenu {
         visibility: visible;
+    }
+
+    .slides-navigation {
+        visibility: hidden;
     }
 }
 
