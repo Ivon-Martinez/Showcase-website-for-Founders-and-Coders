@@ -28,10 +28,6 @@
     background-image: url(../img/icon/next_white.png);
 }
 
-/* body {
-min-width: 565px;
-} */
-
 .slides-container {
     filter: grayscale(100%);
 
@@ -56,19 +52,12 @@ min-width: 565px;
     z-index: 5;
     text-align:center;
     margin-top: -175px;
-
-
 }
 
 .title p {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
-
 }
-
-/* .sentence {
-    display: inline-flex
-} */
 
 .title .hello {
     font-size: 80px;
@@ -79,37 +68,18 @@ min-width: 565px;
     margin-right: 10%;
 }
 
-
-/* .title .name {
-    font-size: 80px;
-    font-weight: 1000;
-    letter-spacing: 5px;
-
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    text-shadow: 00000052;
-} */
-   /* font-size: 5vw; */
-    /* color: #fff; */
-    /* text-align: center; */
-    /* animation: glow 1s ease-in-out infinite alternate; */
-
-
-
-
-
-
 .title .welcome {
     margin-top: -80px;
-     font-size: 30px;
+     font-size: 50px;
     /* font-size: 1.5vw; */
     font-weight: 500;
-    letter-spacing: 7px;
+    /* letter-spacing: 7px; */
     /* text-shadow: 0px 2px 5px rgb(0, 0, 0); */
     color: #fff;
     /* text-align: center; */
     animation: glow 1s ease-in-out infinite alternate;
     margin-left: 15%;
+    font-family: Dancing Script;
 }
 
 .copyrightSection {
@@ -133,18 +103,10 @@ min-width: 565px;
     }
   }
 
-
-
 .navigationMenu {
     position: absolute;
     margin-top: 50px;
     z-index: 5;
-
-    /* top: 1%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center; */
 
     top: 1%;
     right: 5%; 
@@ -153,12 +115,10 @@ min-width: 565px;
     justify-content: center;
     gap: 10px; /* Space between buttons */
 
-
     align-items: center;
     flex-wrap: nowrap;        /* Prevent buttons from wrapping to a new line */
     overflow: hidden;         /* Hide overflowing content */
     white-space: nowrap;      /* Prevent text wrapping inside buttons */
-
 }
 
 .home {
@@ -171,21 +131,18 @@ min-width: 565px;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-
 }
 
   .navigationMenu button:hover {
     background: black;
     border: 2px solid black;
     color: #ff4da6;
-
   }
 
   .home button:hover {
     background: #00000052;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-
   }
 
   .navigationMenu button {
@@ -202,7 +159,6 @@ min-width: 565px;
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     /* margin: 0 10px;   aumenta el espacio entre los botones*/
-
   }
 
   .home button {
@@ -223,9 +179,6 @@ min-width: 565px;
     transition-duration: 0.4s;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     margin: 0 10px;
-
-
-
 }
 
 @media (max-width: 1030px){
@@ -248,7 +201,6 @@ min-width: 565px;
     }
 
     .title {
-        /* top: 50%; */
         margin-top: -155px;
     }
 
@@ -261,7 +213,7 @@ min-width: 565px;
     }
 
     .title .welcome{
-    letter-spacing: 6px;
+    /* letter-spacing: 6px; */
     margin-left: 10%;
     }
 
@@ -269,43 +221,18 @@ min-width: 565px;
 
 
 @media (max-width: 815px){
-    .navigationMenu {
-        gap: 8px;              /* Reduce space between buttons on smaller screens */
-    }
-
-    .navigationMenu button {
-        padding: 12px 20px;    /* Reduce padding */
-        font-size: 20px;       /* Reduce font size */
-    }
-
-    .home {
-        gap: 8px;              /* Reduce space between buttons on smaller screens */
-    }
-
-    .home button {
-        padding: 12px 20px;    /* Reduce padding */
-        font-size: 20px;       /* Reduce font size */
-    }
-
     .title {
         margin-top: -135px;
     }
 
     .title .hello {
         font-size: 60px;
-        margin-left: 80px;
-
-        font-weight: 800;
         letter-spacing: 3px;
     }
 
     .title .welcome{
-    letter-spacing: 6px;
-    margin-left: 10%;
     margin-top: -70px;
-
     }
-
 }
 
 @media (max-width: 768px) {
@@ -333,65 +260,86 @@ min-width: 565px;
 
     .title .hello {
         font-size: 50px;
-        margin-left: 80px;
-
-        font-weight: 800;
         letter-spacing: 2px;
     }
 
     .title .welcome{
-        letter-spacing: 5px;
+        /* letter-spacing: 5px; */
         margin-left: 5%;
         margin-top: -58px;
+        font-size: 45px;
+    }
+}
 
+@media (max-width: 680px) {
+    .navigationMenu {
+        gap: 4px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .navigationMenu button {
+        padding: 8px 13px;    /* Reduce padding */
+        font-size: 16px;       /* Reduce font size */
+    }
+
+    .home {
+        gap: 4px;              /* Reduce space between buttons on smaller screens */
+    }
+
+    .home button {
+        padding: 8px 13px;    /* Reduce padding */
+        font-size: 16px;       /* Reduce font size */
+    }
+
+    .title .welcome{
+        font-size: 39px;
+    }
+
+    .slides-navigation .next,
+    .slides-navigation .prev {
+    width: 35px;
+    height: 35px;
+    }
+
+    .copyrightSection {
+        font-size: 9px;
+        margin-top: -40px;
     }
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 620px) {
     .navigationMenu {
         /*gap: 2px;               Further reduce space between buttons */
         visibility: hidden;
     }
 
     .title {
-        margin-top: -100px;
+        margin-top: -120px;
     }
 
     .title .hello {
         font-size: 39px;
-        margin-left: 80px;
-
-        font-weight: 800;
         letter-spacing: 1px;
-
     }
 
     .title .welcome{
-        letter-spacing: 5px;
+        /* letter-spacing: 5px; */
         margin-left: 5%;
         margin-top: -35px;
         margin-left: 80px;
         margin-right: 60px;
+        font-size: 35px;
+    }
 
-
-
+    .copyrightSection {
+        font-size: 8px;
+        margin-top: -30px;
     }
 
     .home {
        /* gap: 2px;               Further reduce space between buttons */
        visibility: hidden;
     }
-
-    /* .navigationMenu button {
-        padding: 8px 10px;     
-        font-size: 16px;       
-    }
-
-    .home button {
-        padding: 8px 10px;     
-        font-size: 16px;       
-    } */
 
     .reducedMenu {
         visibility: visible;
@@ -401,6 +349,37 @@ min-width: 565px;
         visibility: hidden;
     }
 }
+
+@media (max-width: 408px) {
+
+    .title {
+        margin-top: -155px;
+    }
+
+    .copyrightSection {
+        font-size: 6px;
+    }
+
+    .title .welcome{
+        font-size: 30px;
+        margin-left: 89px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .title {
+        margin-top: -195px;
+    }
+
+    .title .welcome{
+        font-size: 30px;
+        margin-left: 95px;
+    }
+
+}
+
+
 
 .overlay {
     height: 0%;
@@ -417,10 +396,10 @@ min-width: 565px;
   
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 30%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   
   .overlay a {
@@ -433,7 +412,7 @@ min-width: 565px;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #e60073;
   }
   
   .overlay .closebtn {
@@ -443,14 +422,14 @@ min-width: 565px;
     font-size: 60px;
   }
   
-  /* @media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-
-  } */
-
+  @media (max-height: 685px) {
+  
+    .overlay-content {
+        margin-top: 0px;
+      }
+      
+      .overlay a {
+        font-size: 25px;
+        color: #818181;
+      }
+}
