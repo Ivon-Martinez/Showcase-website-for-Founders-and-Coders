@@ -20,3 +20,13 @@
         document.getElementById("title").style.display = "inline";
 
       }
+
+      // function openCvPage() {
+      //   window.open('cvpage.html', '_self');
+      // }
+
+      // document.getElementById('cvPagebutton').addEventListener('click',openCvPage);
+
+      function openPage(pageName) {
+        window.open(pageName, '_self');
+      }
