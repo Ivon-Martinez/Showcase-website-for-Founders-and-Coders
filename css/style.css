@@ -1,3 +1,5 @@
+
+
 .overlayImg {
     width: 100%;
     height: 100%;
@@ -50,6 +52,7 @@
     z-index: 5;
     text-align:center;
     margin-top: -175px;
+    display:block
 }
 
 .title p {
@@ -63,6 +66,7 @@
     letter-spacing: 5px;
     color: #00000000;    -webkit-text-stroke: 2px white;
     margin-right: 10%;
+    font-family: sans-serif;
 }
 
 .title .welcome {
@@ -72,7 +76,8 @@
     color: #fff;
     animation: glow 1s ease-in-out infinite alternate;
     margin-left: 15%;
-    font-family: Dancing Script;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+
 }
 
 .copyrightSection {
@@ -97,15 +102,15 @@
 .navigationMenu {
     position: absolute;
     margin-top: 50px;
-    z-index: 5;
+    z-index: 1100;
     top: 1%;
     right: 5%;
     transform: translate(0, -50%);
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between buttons */
+    gap: 10px; 
     align-items: center;
-    flex-wrap: nowrap;        /* Prevent buttons from wrapping to a new line */
+    flex-wrap: nowrap;        
     overflow: hidden;         /* Hide overflowing content */
     white-space: nowrap;      /* Prevent text wrapping inside buttons */
 }
@@ -134,7 +139,7 @@
     border-left-style: solid;
     text-align: justify;
     text-shadow: 0 0 black;
-}
+}   
 
 .home button:hover {
     color: rgb(255, 255, 255);
@@ -160,23 +165,100 @@
     transition-duration: 0.4s;
 }
 
+.aboutContent {
+    position: absolute;
+    top: 20%;
+    z-index: 5;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.aboutContent h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+}
+
+.aboutContent p {
+    color: rgb(255, 255, 255);
+    padding: 20px 80px;
+    font-size: 1.7vw;
+    text-align: justify;
+    font-family: system-ui, sans-serif;
+    font-weight: 100;
+}
+
+/* .overlay-about {
+    position: relative;
+    top: 6%;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    min-height: 80%;
+} */
+
+.projectsContent {
+    position: absolute;
+    top: 20%;
+    z-index: 5;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.projectsContent h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+}
+
+.projectsContent p {
+        color: rgb(255, 255, 255);
+        padding: 20px 80px;
+        font-size: 1.7vw;
+        text-align: justify;
+        font-family: system-ui, sans-serif;
+        font-weight: 100;   
+}
+
+@media (max-width: 1305px){
+    .aboutContent p {
+        font-size: 2vw;
+    }
+
+    .aboutContent {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+}
+
 @media (max-width: 1030px){
     .navigationMenu {
-        gap: 8px;              /* Reduce space between buttons on smaller screens */
+        gap: 8px;             
     }
 
     .navigationMenu button {
-        padding: 12px 20px;    /* Reduce padding */
-        font-size: 20px;       /* Reduce font size */
+        padding: 12px 20px;    
+        font-size: 20px;       
     }
 
     .home {
-        gap: 8px;              /* Reduce space between buttons on smaller screens */
+        gap: 8px;             
     }
 
     .home button {
-        padding: 12px 20px;    /* Reduce padding */
-        font-size: 20px;       /* Reduce font size */
+        padding: 12px 20px;    
+        font-size: 20px;       
     }
 
     .title {
@@ -195,6 +277,16 @@
         margin-left: 10%;
     }
 
+    .aboutContent p {
+        font-size: 2.3vw;
+    }
+
+    .aboutContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+
 }
 
 
@@ -210,6 +302,10 @@
 
     .title .welcome{
         margin-top: -70px;
+    }
+
+    .aboutContent p {
+        font-size: 2.5vw;
     }
 }
 
@@ -246,6 +342,10 @@
         margin-top: -58px;
         font-size: 45px;
     }
+
+    .aboutContent p {
+        font-size: 2.8vw;
+    }
 }
 
 @media (max-width: 680px) {
@@ -280,6 +380,15 @@
     .copyrightSection {
         font-size: 9px;
         margin-top: -40px;
+    }
+
+    .aboutContent p {
+        font-size: 2.9vw;
+    }
+
+    .aboutContent {
+        margin-right: 2%;
+        margin-left: 2%;
     }
 
 }
@@ -322,6 +431,15 @@
     .slides-navigation {
         visibility: hidden;
     }
+
+    .aboutContent p {
+        font-size: 3.3vw;
+    }
+
+    .aboutContent {
+        margin-right: -2%;
+        margin-left: -2%;
+    }
 }
 
 @media (max-width: 408px) {
@@ -338,6 +456,15 @@
         font-size: 30px;
         margin-left: 89px;
     }
+
+    .aboutContent p {
+        font-size: 3.5vw;
+    }
+
+    .aboutContent {
+        margin-right: -8%;
+        margin-left: -8%;
+    }
 }
 
 @media (max-width: 300px) {
@@ -350,6 +477,17 @@
         font-size: 30px;
         margin-left: 95px;
     }
+    
+    .aboutContent p {
+        font-size: 3.7vw;
+    }
+
+    .aboutContent {
+        margin-right: -15%;
+        margin-left: -15%;
+    }
+
+
 
 }
 

@@ -27,6 +27,12 @@
 
       // document.getElementById('cvPagebutton').addEventListener('click',openCvPage);
 
-      function openPage(pageName) {
-        window.open(pageName, '_self');
-      }
+       function openPage(pageName) {
+         window.open(pageName, '_self');
+       }
+
+
+    //   function openAbout() {
+    //     document.getElementById("aboutOverlay").style.display = "block";
+    //     document.getElementById("title").style.display = "none";
+    // }
