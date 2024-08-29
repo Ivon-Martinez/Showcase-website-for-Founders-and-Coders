@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services provided</title>
+    <title>Services</title>
+    <link rel="stylesheet" href="css/superslides.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=GreatVibes:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <h1>Here you will se ethe services I provide</h1>
+    <div id="slides">
+     
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">CV</a>
+          </div>
+        </div>
+
+        <div class="reducedMenu">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div> 
+          <div class="home">
+            <button onclick="openPage('index.html')" id="homePagebutton" class="button img">Ivon Martinez <br> Frontend Developer</button>
+          </div>
+
+          <div class="navigationMenu">
+            <button onclick="openPage('aboutpage.html')" id="aboutPagebutton" class="button about">About</button>
+            <button onclick="openPage('projectspage.html')" id="projetsPagebutton" class="button projects">Projects</button>
+            <button onclick="openPage('servicespage.html')" id="servicesPagebutton" class="button services">Services</button>
+            <button onclick="openPage('contactpage.html')" id="contactPagebutton" class="button contact">Contact</button>
+          </div>
+      </div>
+
+        <div class="overlayImg"></div>
+        
+        <div class="slides-container">
+          <img src="img/slide1.jpg" alt="">
+          <img src="img/slide2.jpg" alt="">
+          <img src="img/slide3.jpg" alt="">
+        </div>
+        
+        <div id="servicesContent" class="servicesContent">
+            <div class="overlay-services">
+                <h1>Services</h1>
+                <p>I'm Ivon Martinez, a passionate frontend developer specializing in building responsive and interactive web applications. 
+                  With a strong foundation in HTML, CSS, and JavaScript, I enjoy tackling new challenges and bringing ideas to life on the web. 
+                  My goal is to build web applications that are not only visually appealing but also easy to use and accessible to everyone.
+                  <br>
+                  <br>
+    
+                  Beyond coding, I’m an avid Zumba dancer and enjoy family walks on weekends. I'm also passionate about tech community events 
+                  and regularly volunteer as a web developer and enjoy teaching Spanish.</p>
+            </div>
+        </div>     
+
+    </div>
+
+    <script src="js/jquery.superslides.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+ 
+
+    

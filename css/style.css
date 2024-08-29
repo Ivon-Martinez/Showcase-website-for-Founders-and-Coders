@@ -230,12 +230,91 @@
         font-weight: 100;   
 }
 
+.servicesContent {
+    position: absolute;
+    top: 20%;
+    z-index: 5;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.servicesContent h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+}
+
+.servicesContent p {
+    color: rgb(255, 255, 255);
+    padding: 20px 80px;
+    font-size: 1.7vw;
+    text-align: justify;
+    font-family: system-ui, sans-serif;
+    font-weight: 100;
+}
+
+.contactContent {
+    position: absolute;
+    top: 20%;
+    z-index: 5;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.contactContent h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+}
+
+.contactContent p {
+    color: rgb(255, 255, 255);
+    padding: 20px 80px;
+    font-size: 1.7vw;
+    text-align: justify;
+    font-family: system-ui, sans-serif;
+    font-weight: 100;
+}
+
 @media (max-width: 1305px){
     .aboutContent p {
         font-size: 2vw;
     }
 
     .aboutContent {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .projectsContent p {
+        font-size: 2vw;
+    }
+
+    .projectsContent {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .servicesContent p {
+        font-size: 2vw;
+    }
+
+    .servicesContent {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .contactContent p {
+        font-size: 2vw;
+    }
+
+    .contactContent {
         margin-right: 3%;
         margin-left: 3%;
     }
@@ -286,6 +365,33 @@
         margin-left: 2%;
     }
 
+    .projectsContent p {
+        font-size: 2.3vw;
+    }
+
+    .projectsContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .servicesContent p {
+        font-size: 2.3vw;
+    }
+
+    .servicesContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .contactContent p {
+        font-size: 2.3vw;
+    }
+
+    .contactContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
 
 }
 
@@ -305,6 +411,18 @@
     }
 
     .aboutContent p {
+        font-size: 2.5vw;
+    }
+
+    .servicesContent p {
+        font-size: 2.5vw;
+    }
+
+    .contactContent p {
+        font-size: 2.5vw;
+    }
+
+    .projectsContent p {
         font-size: 2.5vw;
     }
 }
@@ -344,6 +462,18 @@
     }
 
     .aboutContent p {
+        font-size: 2.8vw;
+    }
+
+    .projectsContent p {
+        font-size: 2.8vw;
+    }
+
+    .contactContent p {
+        font-size: 2.8vw;
+    }
+
+    .servicesContent p {
         font-size: 2.8vw;
     }
 }
@@ -387,6 +517,33 @@
     }
 
     .aboutContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .servicesContent p {
+        font-size: 2.9vw;
+    }
+
+    .servicesContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .contactContent p {
+        font-size: 2.9vw;
+    }
+
+    .contactContent {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .projectsContent p {
+        font-size: 2.9vw;
+    }
+
+    .projectsContent {
         margin-right: 2%;
         margin-left: 2%;
     }
@@ -440,6 +597,33 @@
         margin-right: -2%;
         margin-left: -2%;
     }
+
+    .servicesContent p {
+        font-size: 3.3vw;
+    }
+
+    .servicesContent {
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    .contactContent p {
+        font-size: 3.3vw;
+    }
+
+    .contactContent {
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    .projectsContent p {
+        font-size: 3.3vw;
+    }
+
+    .projectsContent {
+        margin-right: -2%;
+        margin-left: -2%;
+    }
 }
 
 @media (max-width: 408px) {
@@ -465,6 +649,33 @@
         margin-right: -8%;
         margin-left: -8%;
     }
+
+    .projectsContent p {
+        font-size: 3.5vw;
+    }
+
+    .projectsContent {
+        margin-right: -8%;
+        margin-left: -8%;
+    }
+
+    .contactContent p {
+        font-size: 3.5vw;
+    }
+
+    .contactContent {
+        margin-right: -8%;
+        margin-left: -8%;
+    }
+
+    .servicesContent p {
+        font-size: 3.5vw;
+    }
+
+    .servicesContent {
+        margin-right: -8%;
+        margin-left: -8%;
+    }
 }
 
 @media (max-width: 300px) {
@@ -483,6 +694,33 @@
     }
 
     .aboutContent {
+        margin-right: -15%;
+        margin-left: -15%;
+    }
+
+    .servicesContent p {
+        font-size: 3.7vw;
+    }
+
+    .servicesContent {
+        margin-right: -15%;
+        margin-left: -15%;
+    }
+
+    .projectsContent p {
+        font-size: 3.7vw;
+    }
+
+    .projectsContent {
+        margin-right: -15%;
+        margin-left: -15%;
+    }
+
+    .contactContent p {
+        font-size: 3.7vw;
+    }
+
+    .contactContent {
         margin-right: -15%;
         margin-left: -15%;
     }
