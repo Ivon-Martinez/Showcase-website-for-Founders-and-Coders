@@ -1,3 +1,18 @@
+:root {
+    --color-primary: #e60073;
+    --color-secondary: #ff4da6;
+    --text-shadow-glow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    --text-shadow-glow-alt: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: var(--text-shadow-glow);
+    }
+    to {
+        text-shadow: var(--text-shadow-glow-alt);
+    }
+}
 
 .overlayImg {
     width: 100%;
@@ -89,7 +104,7 @@
     margin-top: -50px;
 }
 
-@-webkit-keyframes glow {
+/* @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -97,7 +112,7 @@
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
-  }
+  } */
 
 .navigationMenu {
     position: absolute;
@@ -282,38 +297,22 @@
     font-weight: 100;
 }
 
+.reducedMenuSpan {
+    font-size: 30px;
+    cursor: pointer;
+}
+
 @media (max-width: 1305px){
-    .aboutContent p {
-        font-size: 2vw;
-    }
-
-    .aboutContent {
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-
-    .projectsContent p {
-        font-size: 2vw;
-    }
-
-    .projectsContent {
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-
-    .servicesContent p {
-        font-size: 2vw;
-    }
-
-    .servicesContent {
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
     .contactContent p {
         font-size: 2vw;
     }
 
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
     .contactContent {
         margin-right: 3%;
         margin-left: 3%;
@@ -321,19 +320,12 @@
 }
 
 @media (max-width: 1030px){
-    .navigationMenu {
+    .navigationMenu,
+    .home  {
         gap: 8px;
     }
 
-    .navigationMenu button {
-        padding: 12px 20px;
-        font-size: 20px;
-    }
-
-    .home {
-        gap: 8px;
-    }
-
+    .navigationMenu button,
     .home button {
         padding: 12px 20px;
         font-size: 20px;
@@ -355,37 +347,16 @@
         margin-left: 10%;
     }
 
-    .aboutContent p {
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
+    .contactContent p  {
         font-size: 2.3vw;
     }
 
-    .aboutContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .projectsContent p {
-        font-size: 2.3vw;
-    }
-
-    .projectsContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .servicesContent p {
-        font-size: 2.3vw;
-    }
-
-    .servicesContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .contactContent p {
-        font-size: 2.3vw;
-    }
-
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
     .contactContent {
         margin-right: 2%;
         margin-left: 2%;
@@ -406,37 +377,21 @@
         margin-top: -70px;
     }
 
-    .aboutContent p {
-        font-size: 2.5vw;
-    }
-
-    .servicesContent p {
-        font-size: 2.5vw;
-    }
-
-    .contactContent p {
-        font-size: 2.5vw;
-    }
-
-    .projectsContent p {
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
+    .contactContent p   {
         font-size: 2.5vw;
     }
 }
 
 @media (max-width: 768px) {
-    .navigationMenu {
-        gap: 5px;              /* Reduce space between buttons on smaller screens */
-    }
-
-    .navigationMenu button {
-        padding: 10px 15px;    /* Reduce padding */
-        font-size: 18px;       /* Reduce font size */
-    }
-
+    .navigationMenu, 
     .home {
         gap: 5px;              /* Reduce space between buttons on smaller screens */
     }
 
+    .navigationMenu button,
     .home button {
         padding: 10px 15px;    /* Reduce padding */
         font-size: 18px;       /* Reduce font size */
@@ -457,37 +412,21 @@
         font-size: 45px;
     }
 
-    .aboutContent p {
-        font-size: 2.8vw;
-    }
-
-    .projectsContent p {
-        font-size: 2.8vw;
-    }
-
-    .contactContent p {
-        font-size: 2.8vw;
-    }
-
-    .servicesContent p {
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
+    .contactContent p   {
         font-size: 2.8vw;
     }
 }
 
 @media (max-width: 680px) {
-    .navigationMenu {
-        gap: 4px;              /* Reduce space between buttons on smaller screens */
-    }
-
-    .navigationMenu button {
-        padding: 8px 13px;    /* Reduce padding */
-        font-size: 16px;       /* Reduce font size */
-    }
-
+    .navigationMenu,
     .home {
         gap: 4px;              /* Reduce space between buttons on smaller screens */
     }
 
+    .navigationMenu button,
     .home button {
         padding: 8px 13px;    /* Reduce padding */
         font-size: 16px;       /* Reduce font size */
@@ -508,45 +447,25 @@
         margin-top: -40px;
     }
 
-    .aboutContent p {
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
+    .contactContent p  {
         font-size: 2.9vw;
     }
 
-    .aboutContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .servicesContent p {
-        font-size: 2.9vw;
-    }
-
-    .servicesContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .contactContent p {
-        font-size: 2.9vw;
-    }
-
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
     .contactContent {
-        margin-right: 2%;
-        margin-left: 2%;
-    }
-
-    .projectsContent p {
-        font-size: 2.9vw;
-    }
-
-    .projectsContent {
         margin-right: 2%;
         margin-left: 2%;
     }
 }
 
 @media (max-width: 620px) {
-    .navigationMenu {
+    .navigationMenu,
+    .home {
         visibility: hidden;
     }
 
@@ -572,10 +491,6 @@
         margin-top: -30px;
     }
 
-    .home {
-       visibility: hidden;
-    }
-
     .reducedMenu {
         visibility: visible;
     }
@@ -584,38 +499,17 @@
         visibility: hidden;
     }
 
-    .aboutContent p {
-        font-size: 3.3vw;
-    }
-
-    .aboutContent {
-        margin-right: -2%;
-        margin-left: -2%;
-    }
-
-    .servicesContent p {
-        font-size: 3.3vw;
-    }
-
-    .servicesContent {
-        margin-right: -2%;
-        margin-left: -2%;
-    }
-
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
     .contactContent p {
         font-size: 3.3vw;
     }
 
-    .contactContent {
-        margin-right: -2%;
-        margin-left: -2%;
-    }
-
-    .projectsContent p {
-        font-size: 3.3vw;
-    }
-
-    .projectsContent {
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
+    .contactContent  {
         margin-right: -2%;
         margin-left: -2%;
     }
@@ -636,38 +530,17 @@
         margin-left: 89px;
     }
 
-    .aboutContent p {
-        font-size: 3.5vw;
-    }
-
-    .aboutContent {
-        margin-right: -8%;
-        margin-left: -8%;
-    }
-
-    .projectsContent p {
-        font-size: 3.5vw;
-    }
-
-    .projectsContent {
-        margin-right: -8%;
-        margin-left: -8%;
-    }
-
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
     .contactContent p {
         font-size: 3.5vw;
     }
 
-    .contactContent {
-        margin-right: -8%;
-        margin-left: -8%;
-    }
-
-    .servicesContent p {
-        font-size: 3.5vw;
-    }
-
-    .servicesContent {
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
+    .contactContent  {
         margin-right: -8%;
         margin-left: -8%;
     }
@@ -684,38 +557,17 @@
         margin-left: 95px;
     }
 
-    .aboutContent p {
-        font-size: 3.7vw;
-    }
-
-    .aboutContent {
-        margin-right: -15%;
-        margin-left: -15%;
-    }
-
-    .servicesContent p {
-        font-size: 3.7vw;
-    }
-
-    .servicesContent {
-        margin-right: -15%;
-        margin-left: -15%;
-    }
-
-    .projectsContent p {
-        font-size: 3.7vw;
-    }
-
-    .projectsContent {
-        margin-right: -15%;
-        margin-left: -15%;
-    }
-
+    .aboutContent p,
+    .projectsContent p,
+    .servicesContent p,
     .contactContent p {
         font-size: 3.7vw;
     }
 
-    .contactContent {
+    .aboutContent,
+    .projectsContent,
+    .servicesContent,
+    .contactContent{
         margin-right: -15%;
         margin-left: -15%;
     }
@@ -807,12 +659,3 @@
     filter: url(#glow); 
   }
 
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
