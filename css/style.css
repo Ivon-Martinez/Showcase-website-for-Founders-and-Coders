@@ -302,6 +302,43 @@
     cursor: pointer;
 }
 
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    z-index: 1500;
+    /* text-shadow: 0px 0px 10px black; */
+}
+.fa:hover{
+    opacity: 0.9;
+    color: white;
+    border-color:  #ff4da6;
+    background-color: #ff4da6;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.fa-github, .fa-linkedin, .fa-codewars{
+    color:white;
+    border: solid;  
+    border-width: thin;
+    border-color: white;
+}
+
+.iconos
+{
+    z-index: 1500;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    text-align:center;
+    margin-top: -175px;
+    display:block
+}
+
 @media (max-width: 1305px){
     .aboutContent p,
     .projectsContent p,
