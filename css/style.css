@@ -5,6 +5,10 @@
     --text-shadow-glow-alt: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
 
+body {
+    background-color: black;
+}
+
 @-webkit-keyframes glow {
     from {
         text-shadow: var(--text-shadow-glow);
@@ -204,6 +208,61 @@
     text-align: justify;
     font-family: system-ui, sans-serif;
     font-weight: 100;
+}
+
+.transitionDiv {
+    background: linear-gradient(to top, rgba(91, 89, 89, 0.82), rgb(0, 0, 0));
+}
+
+.aboutMain {
+    display: flex;
+    align-items: center;
+
+}
+
+.aboutSection h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family:'Dancing Script', 'Arial', sans-serif;
+    margin-left: 250px;
+    container-type: size;
+    margin-block-end: auto;
+}
+
+.aboutImage {
+    width: 300px;
+    height: 600px;
+}
+
+.aboutImageDiv {
+    background-color: #fff;
+    width: revert;
+    height: 472px;
+    border-radius: 80%;
+    width: min-content;
+    margin-left: 190px;
+    border-bottom-left-radius: 140%;
+    background: linear-gradient(to top, rgb(255 255 255), rgb(206 197 204));
+    margin-top: auto;
+
+}
+
+.aboutSection {
+    background-color: black;
+}
+
+.aboutTextDiv {
+    color: rgb(255, 255, 255);
+    margin-right: 200px;
+    margin-left: 150px;
+    text-align: justify;
+    font-family: system-ui, sans-serif;
+    font-size: 1.6vw;
+    font-weight: 100;
+
+
 }
 
 /* .overlay-about {
