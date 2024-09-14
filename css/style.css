@@ -215,7 +215,15 @@ body {
     width: 100%;
     height: 200px;
     top: -199px;
-    position: relative;}
+    position: relative;
+}
+
+.secondTransitionDiv {
+    background: linear-gradient(to top, #000000, rgb(162 161 161 / 0%));
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
 
 .aboutMain {
     display: flex;
@@ -737,6 +745,85 @@ body {
         font-size: 2.5vw;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .aboutSection h1 {
+        top: 445px;
+        font-size: 180%;
+        font-weight: 500;
+        color: #fff;
+        animation: glow 1s ease-in-out infinite alternate;
+        font-family: 'Dancing Script', 'Arial', sans-serif;
+        margin-left: 13%;
+        container-type: size;
+        margin-block-end: auto;
+        z-index: 1555;
+        position: relative;
+    }   
+        
+    .aboutMain {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }     
+    
+    .aboutImageDiv {
+        width: revert;
+        height: 472px;
+        background: linear-gradient(to top, rgb(255 255 255), rgb(206 197 204));
+        margin-top: auto;
+        width: -webkit-fill-available;
+        margin: auto;
+        border-radius: 0px;
+        border-bottom-left-radius: 80px;        }
+
+    .aboutImage {
+        width: 300px;
+        height: 600px;
+        width: -webkit-fill-available;
+    }
+
+    .aboutTextDiv {
+        color: rgb(255, 255, 255);
+        margin-right: 11%;
+        margin-left: 11%;
+        text-align: justify;
+        font-family: system-ui, sans-serif;
+        font-size: 3.5vw;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .fa {
+        padding: 6px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        z-index: 1500;
+    }  
+
+    .aboutSection {
+        background-color: black;
+        top: -370px;            
+        position: relative;
+    }
+    
+
+    .secondTransitionDiv {
+        background: linear-gradient(to top, #ffffff00, #000000);
+        width: 100%;
+        height: 150px;
+        position: relative;
+        visibility: visible;
+        top: -200px;
+        z-index: 1;
+        }
+            
+}
+
 
   :root {
     --color-trail: #0700005e;
