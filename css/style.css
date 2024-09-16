@@ -231,7 +231,9 @@ body {
 
 }
 
-.aboutSection h1 {
+
+
+.glowingHeading {
     font-size: 50px;
     font-weight: 500;
     color: #fff;
@@ -297,6 +299,39 @@ body {
     z-index: 1050;
     min-height: 80%;
 } */
+
+#projectHeading, #contactHeading {
+    margin-top: 200px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#servicesHeading {
+    margin-top: 200px;
+    margin-left: 0px;
+    display: flex;
+    justify-content:end;
+    margin-right: 4%;
+}
+
+
+
+#projecText,#servicesText {
+    margin-top: 100px;
+    font-size: 6vw;
+    display: flex;
+    justify-content: center;
+}
+
+#contactText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+   
+}
+
+
 
 .projectsContent {
     position: absolute;
