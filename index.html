@@ -86,7 +86,7 @@
 
 
     <section class="aboutSection" id="aboutSection">
-      <h1 class="glowingHeading">About Me</h1>
+      <h1 class="glowingHeading" id="aboutHeading">About Me</h1>
       <div class="aboutMain">
         <div class="aboutImageDiv">
          <img src="img/3.svg" alt="woman siluete" class="aboutImage">
@@ -132,12 +132,38 @@
       <h1 class="glowingHeading" id="contactHeading">Contact me</h1>
       <div class="contactMain">      
         <div class="TextDiv" id="contactText">
-          <p id="getInTouchText">Get in Touch</p>
-          <p>I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out. You can contact me using the form below or directly via email.
-          </p>
+          <div class="contactTextDiv">
+            <!-- <p id="getInTouchBigText">Get in Touch</p> -->
+            <p id="getInTouchSmallText">I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out. You can contact me using the form or directly via email.
+            </p>
+          </div>
+          <div class="socialLinks">
+            <ul class="socialMedia">
+              <li><a href="https://github.com/Ivon-Martinez" class="fa fa-github" target="_blank"></a></li>
+              <li><a href="https://www.linkedin.com/in/ivon-martinez-genis-a4b36930/" class="fa fa-linkedin" target="_blank"></a></li>
+              <li><a href="mailto:ivon.mrtnz@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Ivon," class="fa fa-envelope" target="_blank"></a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <form action=""></form>
+        <div class="formContainer">
+          <form name="formulario" action="#" class="formulario">
+            <div class="inputBox">
+              <input type="text" name="nameInput" id="nameInput" class="input" required>
+              <label for="formulario">Name</label>
+
+            </div>
+            <div class="inputBox">
+              <input type="email" name="emailInput" id="emailInput" class="input" required>
+              <label for="formulario">Email</label>
+
+            </div> 
+            <div class="inputBox">
+              <input name="messageInput" id="messageInput" cols="30" rows="10" class="input" required>
+              <label for="formulario">Message</label>
+
+            </div>    
+            <button type="submit" class="submitForm" id="submitForm">SUBMIT</button>
+          </form>
         </div>
       </div>
     </section>
