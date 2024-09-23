@@ -289,6 +289,7 @@ body {
     width: 35px;
     position: relative;
     top: 5px;
+    z-index: 1300;
 }
 
 /* .overlay-about {
@@ -488,7 +489,7 @@ body {
 }
 
 form {
-    padding: 0 50px;
+    padding: 0 90px;
     height: 100%;
     width: 100%;
     overflow: hidden;
