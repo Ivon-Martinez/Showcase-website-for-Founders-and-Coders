@@ -173,3 +173,26 @@ window.addEventListener('resize', resize)
 
 anim()
 resize()
+
+
+
+window.addEventListener('scroll', function() {
+  const topBar = document.querySelector('.topBar');
+  if (window.scrollY > 400) {  // Trigger when scrolling down 4 cm (approximately 40px)
+    topBar.classList.add('scrolled');
+  } else {
+    topBar.classList.remove('scrolled');
+  }
+});
+
+
+
+
+  // window.onscroll = function() {
+  //   var topBar = document.querySelector('.topBar');
+  //   if (window.scrollY > 150) { // 4 cm ~ 150px
+  //     topBar.classList.add('scrolled');
+  //   } else {
+  //     topBar.classList.remove('scrolled');
+  //   }
+  // };

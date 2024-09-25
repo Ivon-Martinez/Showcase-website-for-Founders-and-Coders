@@ -184,6 +184,29 @@ body {
     transition-duration: 0.4s;
 }
 
+.topBar {
+    position: sticky;
+    top: 0;
+    z-index: 1600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: transparent;
+    padding: 50px;
+    margin-top: -93px;
+
+}
+
+.topBar.scrolled {
+    background-color: black;
+    /* box-shadow: 0 4px 6px rgb(0 0 0); */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+section {
+    height: 100vh; /* Each section takes up full viewport height */
+
+}
+
 .aboutContent {
     position: absolute;
     top: 20%;
