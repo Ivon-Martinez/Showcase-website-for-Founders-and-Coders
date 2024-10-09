@@ -688,13 +688,11 @@ form {
 
 /* Create three equal columns that floats next to each other */
 .column {
+    display: none; /* Hide columns by default */
+
     float:left;
     width: 28.35%;
-    /* width: 33.33%; */
 
-    /* display: none; */
-     /* Hide columns by default */
-    /* z-index: 1900; */
 
   }
 
@@ -703,7 +701,7 @@ form {
     content: "";
     display: table;
     clear: both;
-    display: flex;
+    /* display: flex; */
     
   }
 
@@ -713,22 +711,18 @@ form {
 
   /* The "show" class is added to the filtered elements */
 .show {
-    display: block;
+    /* display: block; */
+    display: flex; /* Use flex to properly align the elements */
+
   }
   
   /* Style the buttons */
   .btn {
     border: none;
-    /* outline: none; */
-    /* padding: 12px 16px; */
+
     background-color: transparent;
-    /* cursor: pointer; */
     z-index: 3500;
-    /* color: #fff; */
-    /* font-family: system-ui, sans-serif; */
-    /* font-size: 1.1vw; */
-    /* text-align:start;
-    font-weight: 100; */
+
     position: relative;
 
 
@@ -752,6 +746,29 @@ form {
   .btn.active {
     color: #ff4da6;
   }
+
+
+  .comingSoon {
+    text-align: center;
+    color: #ff4da6; /* Pinkish color to match the rest of your theme */
+    font-size: 24px;
+    margin-top: 20px; /* Space between the message and the content */
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Add a fade-in effect for the coming soon message */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
 
 @media (max-width: 1305px){
     .aboutContent p,
