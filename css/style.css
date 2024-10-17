@@ -262,13 +262,14 @@ body {
 .secondTransitionDiv {
     background: linear-gradient(to top, #000000, rgb(162 161 161 / 0%));
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     position: relative;
 }
 
 .aboutMain {
     display: flex;
     align-items: center;
+    margin-top: 100px;
 
 }
 
@@ -305,10 +306,14 @@ body {
 
 .aboutSection {
     background-color: black;
+
+ 
 }
 
+
 #aboutHeading {
-    margin-left: 250px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .TextDiv {
@@ -351,6 +356,10 @@ body {
     margin-left: 0px;
     display: flex;
     justify-content: center;
+}
+
+.projectsMain {
+    margin-top: 120px;
 }
 
 /* #contactHeading {
@@ -460,13 +469,15 @@ body {
     /* margin-left: 20%; */
     /* margin-right: 20%; */
     /* background-color: blue; */
+    margin-top: 150px;
+
 }
 
 .contactMain {
     width: 100%;
     height: 450px;
     max-width: 820px;
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 50px;
     /* background-color: yellow;        */
     display: flex;
@@ -707,7 +718,10 @@ form {
 
   #buttonContainer {
     display: flex;
-    justify-content: center;  }
+    justify-content: center;  
+    margin-bottom: 20px;
+
+}
 
   /* The "show" class is added to the filtered elements */
 .show {
@@ -767,7 +781,11 @@ form {
     }
   }
 
+  .copyrightSection {
+    color: rgb(63, 63, 63);
+    font-family: system-ui, sans-serif;
 
+  }
 
 
 @media (max-width: 1305px){
