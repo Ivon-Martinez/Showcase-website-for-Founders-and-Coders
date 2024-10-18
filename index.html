@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 
-    <base href="https://ivon-martinez.github.io/Portfolio-1/">
+    <!-- <base href="https://ivon-martinez.github.io/Portfolio-1/"> -->
   
 
   </head>
@@ -33,11 +33,11 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
+        <a href="#aboutSection">About</a>
+        <a href="#projectsSection">Projects</a>
         <!-- <a href="#">Services</a> -->
-        <a href="#">Contact</a>
-        <a href="#">CV</a>
+        <a href="#contactSection">Contact</a>
+        <!-- <a href="#">CV</a> -->
       </div>
     </nav>
 
@@ -77,7 +77,7 @@
       <span class="reducedMenuSpan" onclick="openNav()">&#9776;</span>
     </div>
 
-    <div class="topBar">
+    <!-- <div class="topBar">
       <div class="home">
         <button type="button" onclick="openPage('index.html')" id="homePagebutton" class="button img">Ivon Martinez <br> Frontend Developer</button>
       </div>
@@ -88,8 +88,22 @@
          <button type="button" onclick="openPage('servicespage.html')" id="servicesPagebutton" class="button services">Services</button> 
         <button type="button" onclick="openPage('contactpage.html')" id="contactPagebutton" class="button contact">Contact</button>
       </div>
-    </div>
+    </div> -->
 
+    <div class="topBar">
+      <div class="home" id="homeId">
+        <!-- Replace button with anchor tag -->
+        <a href="#" id="homePagebutton" class="button img">Ivon Martinez <br> Frontend Developer</a>
+      </div>
+    
+      <div class="navigationMenu">
+        <!-- Replace buttons with anchor tags -->
+        <a href="#aboutSection" id="aboutPagebutton" class="button about">About</a>
+        <a href="#projectsSection" id="projetsPagebutton" class="button projects">Projects</a>
+        <!-- <a href="#" id="servicesPagebutton" class="button services">Services</a> -->
+        <a href="#contactSection" id="contactPagebutton" class="button contact">Contact</a>
+      </div>
+    </div>
 
 
 
