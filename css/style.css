@@ -7,7 +7,10 @@
 
 html {
     scroll-behavior: smooth;
+    zoom: 100%; /* Ensures no zooming */
+
   }
+
 
   section {
     scroll-margin-top: 200px; /* Adjust this value based on the height of your fixed header or desired offset */
