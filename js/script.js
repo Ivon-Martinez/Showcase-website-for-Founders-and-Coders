@@ -128,16 +128,6 @@ window.addEventListener('scroll', function() {    //function to change the menu 
 
 
 
-
-  // window.onscroll = function() {
-  //   var topBar = document.querySelector('.topBar');
-  //   if (window.scrollY > 150) { // 4 cm ~ 150px
-  //     topBar.classList.add('scrolled');
-  //   } else {
-  //     topBar.classList.remove('scrolled');
-  //   }
-  // };
-
   filterSelection("all") // Execute the function and show all columns
   function filterSelection(c) {
     var x,i;
@@ -207,3 +197,22 @@ window.addEventListener('scroll', function() {    //function to change the menu 
   function hideComingSoon() {
     document.getElementById("comingSoonMessage").style.display = "none";
   }
+
+
+
+//Blur mouse effect  
+// const mouseBlurEffect= document.getElementById("mouseBlurEffect");
+
+// document.body.onpointermove = pointerEvent => {
+//    const { clientX: blurX, clientY: blurY } = pointerEvent;
+
+//    const pageScrollY = window.scrollY;
+
+//     mouseBlurEffect.animate({
+//       left: `${blurX}px`,
+//       top: `${blurY + pageScrollY}px`
+//     }, { duration: 3000, fill: "forwards"});
+// };
+
+
+

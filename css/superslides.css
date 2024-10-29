@@ -63,3 +63,16 @@
 .slides-pagination a.current {
   background: #222;
 }
+
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  display: block; /* or inline-block, depending on your layout */
+}
+
+/* Ensure images within the <picture> tag also inherit these properties */
+.slide-image img {
+  width: 100%;
+  height: auto;
+}
