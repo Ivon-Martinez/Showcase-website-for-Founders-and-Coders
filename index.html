@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- <base href="https://ivon-martinez.github.io/Portfolio-1/"> -->
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ivon Martinez - Frontend Developer specializing in building responsive and interactive web applications.">
     
+    <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <!-- HTTP 1.1 -->
     <meta http-equiv="Pragma" content="no-cache" /> <!-- HTTP 1.0 -->
     <meta http-equiv="Expires" content="0" /> <!-- Proxies -->
     
-    
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->x
-
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
-
-    
-    
-    
-    <title>Ivon's Portfolio</title>
-
     <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=GreatVibes:wght@400;700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-
-
+    <title>Ivon's Portfolio</title>
   </head>
 
   <body>
 
-
+    <!-- Loader -->
     <div class="loader">
       <div class="inner"></div>
     </div>
 
+    <!-- Navigation Overlay -->
     <nav id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -50,12 +41,12 @@
       </div>
     </nav>
 
-
-   
+    <!-- Reduced Menu for Mobile -->
     <div class="reducedMenu">
       <span class="reducedMenuSpan" onclick="openNav()">&#9776;</span>
     </div>
 
+    <!-- Top Bar Navigation -->
     <div class="topBar">
       <div class="home" id="homeId">
         <a href="#" id="homePagebutton" class="button img">Ivon Martinez <br> Frontend Developer</a>
@@ -68,44 +59,23 @@
       </div>
     </div>
 
-
-
+    <!-- Slides Section -->
     <div id="slides">
       <div class="overlayImg"></div>
 
-
-
-
-
-
       <div class="slides-container">
-        <!-- <img src="img/slide1.webp" alt="First slide image">
-        <img src="img/slide2.webp" alt="Second slide image">
-        <img src="img/slide3.webp" alt="Third slide image"> -->
-
-        <picture class="slide-image">
-          <source srcset="img/slide1.webp" type="image/webp">
-          <img src="img/slide1.jpg" alt="First slide image" loading="lazy">
-       </picture>
-       
-       <picture class="slide-image">
-        <source srcset="img/slide2.webp" type="image/webp">
-        <img src="img/slide2.jpg" alt="First slide image" loading="lazy">
-     </picture>
-       
-     <picture class="slide-image">
-      <source srcset="img/slide3.webp" type="image/webp">
-      <img src="img/slide3.jpg" alt="First slide image" loading="lazy">
-   </picture>
-       
-
+          <img src="img/slide1.jpg" alt="First slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
+          <img src="img/slide2.jpg" alt="Second slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
+          <img src="img/slide3.jpg" alt="Third slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
       </div>
 
+      <!-- Title Overlay -->
       <div class="title" id="title">
         <p class="hello">Hello, I'm Ivon.</p>
         <p class="welcome">Welcome to my portfolio!</p>
       </div>
 
+      <!-- Social Media Icons -->
       <div class="iconos">
         <a href="https://github.com/Ivon-Martinez" class="fa fa-github" target="_blank" aria-label="GitHub Profile"></a>
         <a href="https://www.linkedin.com/in/ivon-martinez-genis-a4b36930/" class="fa fa-linkedin" target="_blank" aria-label="LinkedIn Profile"></a>
@@ -114,18 +84,10 @@
     </div>
 
     <div class="transitionDiv">     </div>
-
     <div class="secondTransitionDiv">     </div>
-    <div id="blur"></div> 
 
-
-    <!-- <div id="mouseBlurEffect"></div>
-    <div id="backBlurEffect"></div>  -->
-
-
-
+    <!-- About Section -->
     <section class="aboutSection" id="aboutSection">
-      
       <h1 class="glowingHeading" id="aboutHeading">About Me</h1>
       <div class="aboutMain">
         <!-- <div class="aboutImageDiv">
@@ -148,68 +110,71 @@
       </div>
     </section>
 
-
-
+    <!-- Projects Section -->
     <section class="projectsSection" id="projectsSection">
       <h1 class="glowingHeading" id="projectHeading">My Projects</h1>
       <div class="projectsMain">      
 
+        <!-- Filter Buttons -->
         <div id="buttonContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('bytes')"> Bytes</button>
-          <button class="btn" onclick="filterSelection('casework')"> Casework</button>
-          <button class="btn" onclick="filterSelection('contributions')"> Contributions</button>
+          <button type="button" class="btn active" aria-pressed="true" onclick="filterSelection('all')"> Show all</button>
+          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('bytes')"> Bytes</button>
+          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('casework')"> Casework</button>
+          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('contributions')"> Contributions</button>
         </div>
       </div>
         
         <div class="row">
+          <!-- Project Cards -->
           <div class="column bytes">
             <div class="content">
-              <img src="img/projects/webMedicine.jpg" alt="Medicine" style="width:100%" loading="lazy">
-              <h4>Mountains</h4>
-              <p>Lorem ipsum dolor..</p>
+              <img src="img/projects/webMedicine.jpg" alt="Image related to the medical field" style="width:100%" loading="lazy">
+              <h4>RC Medicina Estetica</h4>
+              <p>Responsive website showcasing Dr. Cotrina’s aesthetic services. Features include online booking, and client 
+                testimonials.</p>
             </div>
           </div>
 
           <div class="column bytes">
             <div class="content">
-              <img src="img/projects/webCakes.jpg" alt="Cakes" style="width:100%" loading="lazy">
-              <h4>Forest</h4>
-              <p>Lorem ipsum dolor..</p>
+              <img src="img/projects/webCakes.jpg" alt="Image of Cakes" style="width:100%" loading="lazy">
+              <h4>D's cakes</h4>
+              <p>Website dedicated to selling delicious cakes and sweets. Features include a gallery of products, shopping cart, 
+                and secure payment options.</p>
             </div>
           </div>
         
           <div class="column casework">
             <div class="content">
-              <img src="img/projects/appExpenses.jpg" alt="Expenses" style="width:100%" loading="lazy">
-              <h4>Retro</h4>
-              <p>Lorem ipsum dolor..</p>
-            </div>
-          </div>
-          <div class="column casework">
-            <div class="content">
-              <img src="img/projects/appGame.jpg" alt="Game" style="width:100%" loading="lazy">
-              <h4>Fast</h4>
-              <p>Lorem ipsum dolor..</p>
-            </div>
-          </div>
-          <div class="column casework">
-            <div class="content">
-              <img src="img/projects/appTravel.jpg" alt="Travel" style="width:100%" loading="lazy">
-              <h4>Classic</h4>
-              <p>Lorem ipsum dolor..</p>
+              <img src="img/projects/appExpenses.jpg" alt="Image related to the accounting field" style="width:100%" loading="lazy">
+              <h4>SpendWise</h4>
+              <p>Intuitive app designed to help you track and manage your expenses with ease to keep finances on track.</p>
             </div>
           </div>
 
+          <div class="column casework">
+            <div class="content">
+              <img src="img/projects/appGame.jpg" alt="Image related to super Mario game" style="width:100%" loading="lazy">
+              <h4>Mario’s World Adventure</h4>
+              <p>A mobile platformer where you join Mario through challenging levels, to rescue the kingdom! Perfect for fans 
+                of all ages!</p>
+            </div>
+          </div>
 
+          <div class="column casework">
+            <div class="content">
+              <img src="img/projects/appTravel.jpg" alt="Image related to the travel field" style="width:100%" loading="lazy">
+              <h4>TripTide</h4>
+              <p>Scheduling app designed to make trip planning easy. Organize your itinerary with flights, accommodations, activities, 
+                and dining in one place.</p>
+            </div>
+          </div>
 
           <!-- Coming Soon Message (initially hidden) -->
           <div id="comingSoonMessage" class="comingSoon" style="display: none;">
             <h4>Coming soon...</h4>
           </div>
       </div>
-
-
     </section>
 
     <!-- <section class="servicesSection" id="servicesSection">
@@ -221,15 +186,16 @@
       </div>
     </section> -->
 
+    <!-- Contact Section -->
     <section class="contactSection" id="contactSection">
       <h1 class="glowingHeading" id="contactHeading">Contact me</h1>
       <div class="contactMain">      
         <div class="TextDiv" id="contactText">
           <div class="contactTextDiv">
-            <!-- <p id="getInTouchBigText">Get in Touch</p> -->
             <p id="getInTouchSmallText">I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out. You can contact me using the form or directly via email.
             </p>
           </div>
+
           <div class="socialLinks">
             <ul class="socialMedia">
               <li><a href="https://github.com/Ivon-Martinez" class="fa fa-github" target="_blank"></a></li>
@@ -238,30 +204,31 @@
             </ul>
           </div>
         </div>
+
         <div class="formContainer">
           <form name="formulario" action="#" class="formulario">
             <div class="inputBox">
               <input type="text" name="nameInput" id="nameInput" class="input" required aria-label="Name">
               <label for="nameInput">Name</label>
-
             </div>
+
             <div class="inputBox">
               <input type="email" name="emailInput" id="emailInput" class="input" required aria-label="Email">
               <label for="emailInput">Email</label>
-
             </div> 
+
             <div class="inputBox">
               <textarea name="messageInput" id="messageInput" class="input" required aria-label="Message"></textarea>
               <label for="messageInput">Message</label>
-
             </div>    
+
             <button type="submit" class="submitForm" id="submitForm">SUBMIT</button>
           </form>
         </div>
       </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="copyrightSection">
       <div class="copyrs">
         <p>&copy; Copyright Ivon Martinez Genis</p>
@@ -269,8 +236,8 @@
       <!-- <a target="_blank" href="https://icons8.com/icon/61016/resume">Cv</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     </footer>
 
+    <!-- SVG for Glowing Trail Effect -->
     <svg class="trail" id="trail" viewbox="0 0 1 1">
-
       <defs>
         <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
@@ -285,22 +252,10 @@
       <path d="M 100 100 L 200 200 L 300 100" />
     </svg>
 
-
-
-
-
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/jquery.superslides.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
-
     <script src="js/script.js"></script>
-
-
-
   </body>
 </html>
 

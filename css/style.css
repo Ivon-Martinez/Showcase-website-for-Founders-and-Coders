@@ -393,6 +393,16 @@ a {
     margin-top: 120px;
 }
 
+.content {
+    color:#ff4da6;
+    font-family: sans-serif;
+}
+
+.content p{
+    color: #fff;
+    font-weight: 10;
+}
+
 #servicesHeading {
     margin-top: 200px;
     margin-left: 0px;
@@ -717,7 +727,9 @@ form {
     display: flex;
     justify-content: center;  
     margin-bottom: 20px;
-}
+    z-index: 1500;
+    position: relative;
+  }
 
   /* The "show" class is added to the filtered elements */
 .show {
@@ -758,8 +770,8 @@ form {
     color: #ff4da6; /* Pinkish color to match the rest of your theme */
     font-size: 24px;
     margin-top: 20px; /* Space between the message and the content */
-    font-weight: bold;
     animation: fadeIn 0.5s ease-in-out;
+    font-family: sans-serif;
   }
   
   /* Add a fade-in effect for the coming soon message */
