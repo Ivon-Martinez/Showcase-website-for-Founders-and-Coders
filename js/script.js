@@ -21,15 +21,29 @@ $(document).ready(function() {
 // Function to open the navigation overlay to full height and hide title
 
 function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-  document.getElementById("title").style.display = "none";
+  const nav = document.getElementById("myNav");
+  const title = document.getElementById("title");
+
+  // Open the navigation
+  nav.style.height = "100%";
+  title.style.display = "none";
+
+  // Set aria-expanded to true to indicate nav is open
+  nav.setAttribute("aria-expanded", "true");
 }
 
 // Function to close the navigation overlay and show title
 
 function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.getElementById("title").style.display = "inline";
+  const nav = document.getElementById("myNav");
+  const title = document.getElementById("title");
+
+  // Close the navigation
+  nav.style.height = "0%";
+  title.style.display = "inline";
+
+  // Set aria-expanded to false to indicate nav is closed
+  nav.setAttribute("aria-expanded", "false");
 }
 
 // Opens a new page in the same tab
@@ -105,34 +119,32 @@ const anim = () => {
      }
   });
 
-// Update the SVG path's 'd' attribute to match the updated points
+  // Update the SVG path's 'd' attribute to match the updated points
 
-path.setAttribute('d', `M ${points.map((p) => `${p.x} ${p.y}`).join(` L `)}`);
+  path.setAttribute('d', `M ${points.map((p) => `${p.x} ${p.y}`).join(` L `)}`);
 
-// Calls the `anim` function continuously to create the animation
+  // Calls the `anim` function continuously to create the animation
 
-requestAnimationFrame(anim);
-};
+  requestAnimationFrame(anim);
+  };
 
-// Resizes the SVG trail to match the window dimensions
-const resize = () => {
-  const ww = window.innerWidth;
-  const wh = window.innerHeight;
+  // Resizes the SVG trail to match the window dimensions
+  const resize = () => {
+    const ww = window.innerWidth;
+    const wh = window.innerHeight;
 
-  svg.style.width = ww + 'px';
-  svg.style.height = wh + 'px';
-  svg.setAttribute('viewBox', `0 0 ${ww} ${wh}`);
-};
+    svg.style.width = ww + 'px';
+    svg.style.height = wh + 'px';
+    svg.setAttribute('viewBox', `0 0 ${ww} ${wh}`);
+  };
 
-// Event listeners for mouse movement and window resizing
-document.addEventListener('mousemove', move);
-window.addEventListener('resize', resize);
+  // Event listeners for mouse movement and window resizing
+  document.addEventListener('mousemove', move);
+  window.addEventListener('resize', resize);
 
-// Start the animation and set initial SVG dimensions
-anim();
-resize();
-
-
+  // Start the animation and set initial SVG dimensions
+  anim();
+  resize();
 
 // Function to change the top bar style when scrolling 400px down
 window.addEventListener('scroll', function() {
@@ -144,6 +156,23 @@ window.addEventListener('scroll', function() {
      topBar.classList.remove('scrolled');
   }
 });
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+  const reducedMenu = document.querySelector('.reducedMenu');
+  if (window.scrollY > 400) {
+     reducedMenu.classList.add('scrolled');
+  } else {
+     reducedMenu.classList.remove('scrolled');
+  }
+});
+
+
+
 
 // Execute the function to display all columns by default
 filterSelection("all");

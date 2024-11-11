@@ -124,15 +124,7 @@ body {
     filter: grayscale(100%);
 }
 
-.reducedMenu {
-    position: absolute;
-    margin-top: 30px;
-    z-index: 3700;
-    top: 1%;
-    left: 4%;
-    visibility: hidden;
-    color: #e60073;
-}
+
 
 .title {
     position: absolute;
@@ -202,7 +194,6 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-
 }
 
 a {
@@ -266,6 +257,7 @@ a {
     background-color: transparent;
     padding: 50px;
     margin-top: -93px;
+
 }
 
 .topBar.scrolled {
@@ -273,6 +265,36 @@ a {
     box-shadow: 0 4px 6px #3130317d;    
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+/* .reducedMenu {
+    position: absolute;
+    margin-top: 30px;
+    z-index: 3700;
+    top: 1%;
+    left: 4%;
+    visibility: hidden;
+    color: #e60073;
+} */
+
+
+.reducedMenu {
+    position: sticky;
+    top: 1%;
+    z-index: 1700; /* Keeps it above other elements on the page */
+    background-color: transparent; /* Add background color if needed */
+    padding: 10px; /* Adjust padding as needed for small screens */
+
+    visibility: hidden;
+    color: #ff4da6;
+    margin-top: -65px;
+    margin-left: 4%;
+
+}
+
+.reducedMenu.scrolled {
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
 }
 
 .aboutContent {
