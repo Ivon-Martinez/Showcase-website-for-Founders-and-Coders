@@ -80,7 +80,6 @@ const move = (event) => {
      mouse.x = x; // Update global mouse coordinates
      mouse.y = y;
 
-
     // Initialize points array if empty
 
     if (points.length === 0) {
@@ -98,7 +97,6 @@ const move = (event) => {
       points = [];
   }
 };
-
 
 // Animation function to move points in a trailing effect
 const anim = () => {
@@ -150,29 +148,12 @@ const anim = () => {
 window.addEventListener('scroll', function() {
   const topBar = document.querySelector('.topBar');
   // Adds or removes the `scrolled` class based on scroll position
-  if (window.scrollY > 400) {
+  if (window.scrollY > 100) {
      topBar.classList.add('scrolled');
   } else {
      topBar.classList.remove('scrolled');
   }
 });
-
-
-
-
-
-
-window.addEventListener('scroll', function() {
-  const reducedMenu = document.querySelector('.reducedMenu');
-  if (window.scrollY > 400) {
-     reducedMenu.classList.add('scrolled');
-  } else {
-     reducedMenu.classList.remove('scrolled');
-  }
-});
-
-
-
 
 // Execute the function to display all columns by default
 filterSelection("all");
@@ -264,22 +245,6 @@ for (var i = 0; i < btns.length; i++) {
   function hideComingSoon() {
     document.getElementById("comingSoonMessage").style.display = "none";
   }
-
-
-
-//Blur mouse effect  
-// const mouseBlurEffect= document.getElementById("mouseBlurEffect");
-
-// document.body.onpointermove = pointerEvent => {
-//    const { clientX: blurX, clientY: blurY } = pointerEvent;
-
-//    const pageScrollY = window.scrollY;
-
-//     mouseBlurEffect.animate({
-//       left: `${blurX}px`,
-//       top: `${blurY + pageScrollY}px`
-//     }, { duration: 3000, fill: "forwards"});
-// };
 
 
 
