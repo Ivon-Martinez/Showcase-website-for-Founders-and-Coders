@@ -1,92 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivon Martinez Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ivon Martinez - Frontend Developer specializing in building responsive and interactive web applications.">
-    
-    <!-- Cache Control -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <!-- HTTP 1.1 -->
-    <meta http-equiv="Pragma" content="no-cache" /> <!-- HTTP 1.0 -->
-    <meta http-equiv="Expires" content="0" /> <!-- Proxies -->
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
-    <link rel="stylesheet" href="css/superslides.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=GreatVibes:wght@400;700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-    <title>Ivon's Portfolio</title>
-  </head>
-
-  <body>
-
-    <!-- Loader -->
-    <div class="loader">
-      <div class="inner"></div>
+  <!-- Top Bar -->
+  <div class="topBar">
+    <div class="home" id="homeId">
+      <a href="#" id="homePagebutton" class="button img">Ivon Martinez</a>
     </div>
-
-    <!-- Navigation Overlay -->
-    <nav id="myNav" class="overlay" aria-expanded="false">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a href="#" onclick="closeNav()">Home</a>
-        <a href="#aboutSection" onclick="closeNav()">About</a>
-        <a href="#projectsSection" onclick="closeNav()">Projects</a>
-        <a href="#contactSection" onclick="closeNav()">Contact</a>
-      </div>
-    </nav>
-
-    <!-- Reduced Menu for Mobile -->
-    <div class="reducedMenu">
-      <span class="reducedMenuSpan" onclick="openNav()">&#9776;</span>
+  
+    <div class="navigationMenu">
+      <a href="#aboutSection" id="aboutPagebutton" class="button about">About</a>
+      <a href="#projectsSection" id="projetsPagebutton" class="button projects">Projects</a>
+      <a href="#contactSection" id="contactPagebutton" class="button contact">Contact</a>
     </div>
+  </div>
 
-    <!-- Top Bar Navigation -->
-    <div class="topBar">
-      <div class="home" id="homeId">
-        <a href="#" id="homePagebutton" class="button img">Ivon Martinez <br> Frontend Developer</a>
-      </div>
-    
-      <div class="navigationMenu">
-        <a href="#aboutSection" id="aboutPagebutton" class="button about">About</a>
-        <a href="#projectsSection" id="projetsPagebutton" class="button projects">Projects</a>
-        <a href="#contactSection" id="contactPagebutton" class="button contact">Contact</a>
-      </div>
+  <!-- Slideshow -->
+  <div class="slides-container">
+    <img id="slide" src="img/slide1.jpg" alt="Slide">
+    <div class="title" id="title">
+      <p class="hello">Hello, I'm Ivon.</p>
+      <p class="welcome">Welcome to my portfolio!</p>
     </div>
-
-    <!-- Slides Section -->
-    <div id="slides">
-      <div class="overlayImg"></div>
-
-      <div class="slides-container">
-          <img src="img/slide1.jpg" alt="First slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
-          <img src="img/slide2.jpg" alt="Second slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
-          <img src="img/slide3.jpg" alt="Third slide image showing woman on desk" width="1920" height="1080" style="display: block; width: 100%; height: auto;">
-      </div>
-
-      <!-- Title Overlay -->
-      <div class="title" id="title">
-        <p class="hello">Hello, I'm Ivon.</p>
-        <p class="welcome">Welcome to my portfolio!</p>
-      </div>
-
-      <!-- Social Media Icons -->
-      <div class="iconos">
-        <a href="https://github.com/Ivon-Martinez" class="fa fa-github" target="_blank" aria-label="GitHub Profile"></a>
-        <a href="https://www.linkedin.com/in/ivon-martinez-genis-a4b36930/" class="fa fa-linkedin" target="_blank" aria-label="LinkedIn Profile"></a>
-        <a href="mailto:ivon.mrtnz@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Ivon," class="fa fa-envelope" target="_blank" aria-label="Send an Email"></a>
-      </div>
+    <div class="iconos">
+      <div><a href="https://github.com/Ivon-Martinez">Github</a></div>
+      <div><a href="linkedin.com/in/ivonmg">LinkedIn</a></div>
     </div>
+  </div>
 
-    <div class="transitionDiv">     </div>
+      <div class="transitionDiv">     </div>
     <div class="secondTransitionDiv">     </div>
 
-    <!-- About Section -->
+  <!-- About -->
     <section class="aboutSection" id="aboutSection">
       <h1 class="glowingHeading" id="aboutHeading">About Me</h1>
       <div class="aboutMain">
@@ -95,161 +46,84 @@
         </div> -->
 
 
-
         <div class="TextDiv">
-          <p>Hola! I'm Ivon, an aspiring frontend developer with a passion for building responsive, interactive web applications. With a solid foundation in HTML <i class="fa-brands fa-html5"></i> CSS <i class="fa-brands fa-css3-alt"></i> and JavaScript <i class="fa-brands fa-js"></i> <br> <br> I love taking on new challenges and bringing creative ideas to life in the digital space. My focus is on crafting websites that are not only visually appealing but also user-friendly and accessible to all.
-            <br>
-            <br>
-            When I'm not coding, you'll find me dancing - especially salsa, one of the main dances from my home country. I also love spending time with my beautiful family and friends. I like attending tech community events, regularly volunteer as a web developer, and enjoy teaching Spanish :)
+          <p class="aboutMe">
+            Hola! I’m Ivon. I studied Computer Science in Cuba and later worked in different roles, from software to international policy and student services. After moving to London and taking a break for maternity leave, I decided to return to tech and focus on building solutions that people can use and interact with.
+            <br><br>
+
+            I want to become a web developer because it combines creativity with logical thinking. I enjoy the challenge of turning an idea into something practical and engaging. I have always been the kind of girl who loves Sudoku and helping others find solutions to practical issues around the house or on their computers. I’m motivated by the opportunity to keep learning, collaborate with others, and contribute to projects that have a positive impact.
+            <br><br>
+
+            Joining the tech industry while taking care of a toddler, studying, and managing house chores hasn’t been a smooth path. The opportunity to join Founders & Coders excites me because of the structured guidance it offers. I believe this program will provide the perfect environment to update my skills and gain more hands-on experience needed to return to the industry confidently. I love how Founders & Coders is community-driven and has a collaborative approach, which matches how I learn best.
+            <br><br>
+
+            So far, I have been learning and practicing HTML, CSS, JavaScript, and Git. I have also recently started learning Python and strengthening my knowledge of SQL through a previous tech program. I volunteer as a web developer, full-stack and social media lead for different organizations to gain practical experience while helping others. I participate in mentorships with Meta, attend different tech workshops, and even created a tech study group with some colleagues from the Sky “Get Into Tech” program, where we study together and try to build projects collaboratively.
+            <br><br>
+
+            When I'm not coding, you’ll find me dancing, especially salsa, one of the main dances from my home country. I also love spending time with my family and friends, and teaching Spanish.
+            <br><br>
+
           </p>
+    <ul class="skills">
+      <li>HTML</li><li>CSS</li><li>JS</li><li>Python</li><li>Git</li>
+    </ul>
         </div>
       </div>
       <div class="cv">
         <p class="TextDiv"> You can download my CV here&nbsp;
-          <a href="doc/IvonMG_CV_08.2024.pdf" target="_blank">
+          <a href="doc/IvonMG_CV 2025.docx" target="_blank">
             <img src="img/icon/icons8-cv-24 (1).png" alt="Download CV Icon" class="cvIcon"/>
           </a>
         </p>
       </div>
     </section>
 
-    <!-- Projects Section -->
+  <!-- Projects -->
     <section class="projectsSection" id="projectsSection">
-      <h1 class="glowingHeading" id="projectHeading">My Projects</h1>
-      <div class="projectsMain">      
-
-        <!-- Filter Buttons -->
-        <div id="buttonContainer">
-          <button type="button" class="btn active" aria-pressed="true" onclick="filterSelection('all')"> Show all</button>
-          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('bytes')"> Bytes</button>
-          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('casework')"> Casework</button>
-          <button type="button" class="btn" aria-pressed="false" onclick="filterSelection('contributions')"> Contributions</button>
+      <h1 class="glowingHeading" id="projectHeading">My Game</h1>
+      <div class="projectsMain"> 
+    <div class="row">
+      <!-- <div class="column"> -->
+        <div class="content">
+          <img src="img/projects/appGame.jpg" alt="">
+          <h4>RC Medicina Estetica</h4>
+          <p>Responsive website showcasing Dr. Cotrina’s aesthetic services.</p>
         </div>
-      </div>
-        
-        <div class="row">
-          <!-- Project Cards -->
-          <div class="column bytes">
-            <div class="content">
-              <img src="img/projects/webMedicine.jpg" alt="Image related to the medical field" style="width:100%" loading="lazy">
-              <h4>RC Medicina Estetica</h4>
-              <p>Responsive website showcasing Dr. Cotrina’s aesthetic services. Features include online booking, and client 
-                testimonials.</p>
-            </div>
-          </div>
+      <!-- </div> -->
+    </div>
+  </section>
 
-          <div class="column bytes">
-            <div class="content">
-              <img src="img/projects/webCakes.jpg" alt="Image of Cakes" style="width:100%" loading="lazy">
-              <h4>D's cakes</h4>
-              <p>Website dedicated to selling delicious cakes and sweets. Features include a gallery of products, shopping cart, 
-                and secure payment options.</p>
-            </div>
-          </div>
-        
-          <div class="column casework">
-            <div class="content">
-              <img src="img/projects/appExpenses.jpg" alt="Image related to the accounting field" style="width:100%" loading="lazy">
-              <h4>SpendWise</h4>
-              <p>Intuitive app designed to help you track and manage your expenses with ease to keep finances on track.</p>
-            </div>
-          </div>
-
-          <div class="column casework">
-            <div class="content">
-              <img src="img/projects/appGame.jpg" alt="Image related to super Mario game" style="width:100%" loading="lazy">
-              <h4>Mario’s World Adventure</h4>
-              <p>A mobile platformer where you join Mario through challenging levels, to rescue the kingdom! Perfect for fans 
-                of all ages!</p>
-            </div>
-          </div>
-
-          <div class="column casework">
-            <div class="content">
-              <img src="img/projects/appTravel.jpg" alt="Image related to the travel field" style="width:100%" loading="lazy">
-              <h4>TripTide</h4>
-              <p>Scheduling app designed to make trip planning easy. Organize your itinerary with flights, accommodations, activities, 
-                and dining in one place.</p>
-            </div>
-          </div>
-
-          <!-- Coming Soon Message (initially hidden) -->
-          <div id="comingSoonMessage" class="comingSoon" style="display: none;">
-            <h4>Coming soon...</h4>
-          </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contactSection" id="contactSection">
-      <h1 class="glowingHeading" id="contactHeading">Contact me</h1>
-      <div class="contactMain">      
-        <div class="TextDiv" id="contactText">
-          <div class="contactTextDiv">
-            <p id="getInTouchSmallText">I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out. You can contact me using the form or directly via email.
-            </p>
-          </div>
-
-          <div class="socialLinks">
-            <ul class="socialMedia">
-              <li><a href="https://github.com/Ivon-Martinez" class="fa fa-github" target="_blank"></a></li>
-              <li><a href="https://www.linkedin.com/in/ivon-martinez-genis-a4b36930/" class="fa fa-linkedin" target="_blank"></a></li>
-              <li><a href="mailto:ivon.mrtnz@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Ivon," class="fa fa-envelope" target="_blank"></a></li>
-            </ul>
-          </div>
+  <!-- Contact -->
+  <section id="contactSection">
+    <h1>Contact Me</h1>
+    <div class="formContainer">
+      <form>
+        <div class="inputBox">
+          <input type="text" required>
+          <label>Name</label>
         </div>
-
-        <div class="formContainer">
-          <form name="formulario" action="#" class="formulario">
-            <div class="inputBox">
-              <input type="text" name="nameInput" id="nameInput" class="input" required aria-label="Name">
-              <label for="nameInput">Name</label>
-            </div>
-
-            <div class="inputBox">
-              <input type="email" name="emailInput" id="emailInput" class="input" required aria-label="Email">
-              <label for="emailInput">Email</label>
-            </div> 
-
-            <div class="inputBox">
-              <textarea name="messageInput" id="messageInput" class="input" required aria-label="Message"></textarea>
-              <label for="messageInput">Message</label>
-            </div>    
-
+        <div class="inputBox">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="inputBox">
+          <textarea required></textarea>
+          <label>Message</label>
+        </div>
             <button type="submit" class="submitForm" id="submitForm">SUBMIT</button>
-          </form>
-        </div>
-      </div>
-    </section>
+      </form>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="copyrightSection">
       <div class="copyrs">
         <p>&copy; Copyright Ivon Martinez Genis</p>
       </div>
-      <!-- <a target="_blank" href="https://icons8.com/icon/61016/resume">Cv</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
     </footer>
 
-    <!-- SVG for Glowing Trail Effect -->
-    <svg class="trail" id="trail" viewbox="0 0 1 1">
-      <defs>
-        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
-          <feFlood flood-color="#ff4da6  " result="color" />
-          <feComposite in2="blur" operator="in" />
-          <feMerge>
-            <feMergeNode in="SourceGraphic" />
-            <feMergeNode />
-          </feMerge>
-        </filter>
-      </defs>
-      <path d="M 100 100 L 200 200 L 300 100" />
-    </svg>
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
-</html>
 
+</body>
+</html>
